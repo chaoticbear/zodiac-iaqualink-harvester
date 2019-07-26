@@ -7,7 +7,8 @@
         "chaoticbear/specter": "*",
         "respect/validation": "^1.1",
         "robmorgan/phinx": "^0.10.0",
-        "swiftmailer/swiftmailer": "^6.0"
+        "swiftmailer/swiftmailer": "^6.0",
+        "chrome-php/chrome": "^0.6.0"
     },
     "autoload": {
         "psr-4": {"Graveyard\\": "graveyard/"}

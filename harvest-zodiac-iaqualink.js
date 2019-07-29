@@ -30,10 +30,9 @@ const path = require('path');
         element.click();
       }
     });
-
     // Location takes a while to init and load page lets just wait awhile
     await page.waitFor(15000);
-    //console.log('Tabs ', (await browser.pages()).length);
+    // Get the browser tabs/pages
     const [tabOne, tabTwo, tabThree] = (await browser.pages());
     // Wait for the page to load the data point divs
     await tabThree.waitForSelector('.home_info_value');
@@ -43,10 +42,11 @@ const path = require('path');
     // Get Air Temp
     const airTxt = await tabThree.evaluate(() => document.querySelector("[id='1_25_1']").innerText);
     console.log('Air Temp ', airTxt);
-    // Get the Y-md H:i:s Date
+    // Get the Y-m-d H:i:s Date
     let today = new Date()
     let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    // Write to file
     let filePath = path.resolve(outputFileName);
     await fs.appendFile(filePath, (date + ' ' + time) + ',' + poolTxt + ',' + airTxt + '\n', function (err) {
       if (err) throw err;

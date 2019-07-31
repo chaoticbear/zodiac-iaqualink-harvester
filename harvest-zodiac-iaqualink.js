@@ -1,10 +1,10 @@
-const userID = 'yourEmailUser';
+const userID = 'yourEmail@gmail.com';
 const userPassword = 'yourPassword';
 const pageUrl = 'https://iaqualink.zodiacpoolsystems.com/';
 const outputFileName = './pool-temp.txt';
-const openWeatherMapAPIKey = 'YourLongApiId';
-// Can select a city Id on a Dallas TX one right now.
+const openWeatherMapAPIKey = 'yourAPIKey';
 // https://openweathermap.org/find?q=
+// Can lookup a weather station city id set to a Dallas TX one.
 const openWeatherCityId = '4684888';
 
 const puppeteer = require('puppeteer');

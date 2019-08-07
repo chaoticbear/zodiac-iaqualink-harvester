@@ -1,0 +1,31 @@
+{
+  "name": "zodiac-iaqualink-harvester",
+  "version": "1.0.0",
+  "description": "Auto Logins and Checks Temp and Local Weather",
+  "main": "harvest-zodiac-iaqualink.js",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "openweather-apis": "^4.0.0",
+    "puppeteer": "^1.19.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaoticbear/zodiac-iaqualink-harvester.git"
+  },
+  "keywords": [
+    "zodiac",
+    "iaqualink",
+    "temp",
+    "pool"
+  ],
+  "author": "Chaotic Bear",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaoticbear/zodiac-iaqualink-harvester/issues"
+  },
+  "homepage": "https://github.com/chaoticbear/zodiac-iaqualink-harvester#readme"
+}
